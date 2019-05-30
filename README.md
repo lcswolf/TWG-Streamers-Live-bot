@@ -1,16 +1,3 @@
-# new-ed-info
-
-Discord bot to notify multiple servers (in set channels) when a Twitch streamer goes live. Uses some code (and principles) from [fuyuneko's bot](<https://github.com/fuyuneko/discord-twitch-bot>)
-
-## Features
-
-- Active development! Wow!
-- Actual functionality!
-- Friendly to Twitch APIs, even if they're not!
-- Free!
-- Open-sourced and auditable by the end user!
-- Did I mention? It's free! Apparently I've got the market cornered!
-
 ## Installation
 
 **If this is too much horsing around for a single Discord bot, I run an instance of the bot myself. [Here's the invite link.](<https://discordapp.com/oauth2/authorize?client_id=411338896178282499&scope=bot&permissions=104321088>) AS SOON AS YOU GET IT INVITED INTO YOUR SERVER, PLEASE CONTACT ME FOR THE FINAL SETUP PROCESS. This will no longer be required when I finally get around to implementing the Discord permissions support in the next major version. Keep an eye on this repository for news on that particular front.**
@@ -58,11 +45,8 @@ Uses the following libraries:
 4. Run the commands:
 - ```!setTwitchNotifyChannel <channel ID>``` - Make sure the ID here is pointing to a specific channel for Twitch notifications to be posted to. THIS IS REQUIRED or the bot will not function on that server, regardless of how many times you tell it to add or remove streamers from its list! Also, it can only be done by the bot administrator. (This will be improved, and allow anyone with the Administrator permission in Discord to mess with it.) **You have to specify the ID, not the fancy link to the channel.**
 - ```!addstream <twitch user>``` - Use the username on the end of the URL of their stream, not their user ID or their custom capitalized version.
-5. ~~screech in anger/horror/revulsion as Twitch's APIs cause it to crash repeatedly~~
-6. You're good to go!
+
 
 *Known caveat: currently the bot has no way of checking for administrative permissions on Discord, so anyone who shares a channel and can message to that channel with the bot in it can control the subscribed streamers list. This will be corrected in the next major version of the bot.* 
 
 See the `!help` and `!botmanagement help` commands for further usage.
-
-## [To-do](<https://github.com/DJArghlex/twitch-notifier-bot/issues?q=label%3Aenhancement+>)
